@@ -1,0 +1,15 @@
+{
+  "name": "Android Development Environment",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next",
+        "vscjava.vscode-java-pack",
+        "androidx.android-studio"
+      ]
+    }
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "./gradlew build"
+}
